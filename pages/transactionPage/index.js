@@ -1,15 +1,20 @@
 import Link from "next/link";
 import React from "react";
+import Transaction from "@/src/components/transaction/transaction";
 
 function TransactionHomePage() {
-  return ( 
+  return (
     <div className="transactionHome">
-        <Link href={"/transactionPage/newTransaction"}>New Transaction +</Link>
-        <br />
-        <br />
-        Hello World
+      <Link href={"/transactionPage/newTransaction"}>New Transaction +</Link>
+      <br />
+      <br />
+      <Transaction store="Starbucks" amount="200.00" crypto="ETH" />
+      <Transaction store="Starbucks" amount="200.00" crypto="ETH" />
+      <Transaction store="Starbucks" amount="200.00" crypto="ETH" />
+      <Transaction store="Starbucks" amount="200.00" crypto="ETH" />
+      <Transaction store="Starbucks" amount="200.00" crypto="ETH" />
     </div>
-);
+  );
 }
 
 export default TransactionHomePage;

@@ -1,21 +1,24 @@
-*{
+* {
   box-sizing: border-box;
 }
-main{
+main {
   padding: 5px 30px;
   max-width: 960px;
-  height: 500px;
+  height: 650px;
   margin: 20px auto;
   background-color: #222;
   box-shadow: 3px 3px 5px 6px #ccc;
   border-radius: 10px;
+  overflow: auto;
 }
-form.register, form.login{
+form.register,
+form.login,
+form.newTransaction {
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-input{
+input {
   display: block;
   margin-bottom: 5px;
   width: 100%;
@@ -24,59 +27,83 @@ input{
   border-radius: 5px;
   background-color: #fff;
 }
-button{
+button {
   width: 100%;
   display: block;
-  background-color: blue;
+  background-color: #0053ff;
   border: 0;
   color: #fff;
   border-radius: 5px;
   padding: 7px 0;
 }
-form.register, form.login h1{
-  color: blue;
+form.register,
+form.login,
+form.newTransaction h1 {
+  color: #fff;
   text-align: center;
 }
 
-form.register, form.login p{
-  color: blue;
+form.register,
+form.login,
+form.newTransaction p {
+  color: #0053ff;
   text-align: center;
 }
-header{
+header {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 50px;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  z-index: 1000;
+  padding: 20px 0; 
 }
-header a{
+header a {
   text-decoration: none;
   color: #fff;
   transition: 0.2s ease-in-out;
 }
-header a:hover{
-  border-bottom: 2px solid blue;
-  color: blue;
+header a:hover {
+  border-bottom: 2px solid #0053ff;
+  color: #0053ff;
   transition: 0.2s ease-in-out;
 }
-header a.logo{
+header a.logo {
   font-weight: bold;
   font-size: 1.5rem;
 }
-header nav{
+header nav {
   display: flex;
   gap: 15px;
 }
-div.transactionHome{
+div.transactionHome {
   color: #fff;
 }
-.transactionHome a{
+.transactionHome a {
   text-decoration: none;
   color: #fff;
   transition: 0.2s ease-in-out;
 }
-.transactionHome a:hover{
-  border-bottom: 2px solid blue;
-  color: blue;
+.transactionHome a:hover {
+  border-bottom: 2px solid #0053ff;
+  color: #0053ff;
   transition: 0.2s ease-in-out;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+.container:hover{
+  background-color: #0053ff;
+  transition: 0.4s ease-in-out;
+  
+}
+.right-side {
+  text-align: right;
 }
