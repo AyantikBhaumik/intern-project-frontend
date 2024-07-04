@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+main{
+  padding: 5px 30px;
+  max-width: 960px;
+  height: 500px;
+  margin: 20px auto;
+  background-color: #222;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  border-radius: 10px;
+}
+form.register, form.login{
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+input{
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button{
+  width: 100%;
+  display: block;
+  background-color: blue;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+form.register, form.login h1{
+  color: blue;
+  text-align: center;
+}
+
+form.register, form.login p{
+  color: blue;
+  text-align: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+header a{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+header a:hover{
+  border-bottom: 2px solid blue;
+  color: blue;
+  transition: 0.2s ease-in-out;
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav{
+  display: flex;
+  gap: 15px;
+}
+div.transactionHome{
+  color: #fff;
+}
+.transactionHome a{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.transactionHome a:hover{
+  border-bottom: 2px solid blue;
+  color: blue;
+  transition: 0.2s ease-in-out;
+}
