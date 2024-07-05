@@ -36,8 +36,8 @@ button {
   border-radius: 5px;
   padding: 7px 0;
 }
-form.register,
-form.login,
+form.register h1,
+form.login h1,
 form.newTransaction h1 {
   color: #fff;
   text-align: center;
@@ -106,4 +106,43 @@ div.transactionHome {
 }
 .right-side {
   text-align: right;
+}
+.reward {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+.reward:hover{
+  background-color: #0053ff;
+  transition: 0.4s ease-in-out;
+}
+.reward-right{
+  text-align: right;
+}
+.profile-flexbox{
+  display: flex;
+  align-items: center;
+}
+.profile-flexbox Image{
+  margin-right: 10px;
+}
+.profile-flexbox h2{
+  color: #fff;
+}
+.profile button {
+  width: 50%;
+  display: block;
+  background-color: #0053ff;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+.active{
+  border-bottom: 2px solid #226bfd;
+  color: #0053ff;
 }
