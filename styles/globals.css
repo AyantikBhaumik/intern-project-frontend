@@ -4,12 +4,13 @@
 main {
   padding: 5px 30px;
   max-width: 960px;
-  height: 650px;
+  height: 680px;
   margin: 20px auto;
   background-color: #222;
   box-shadow: 3px 3px 5px 6px #ccc;
   border-radius: 10px;
   overflow: auto;
+  
 }
 form.register,
 form.login,
@@ -145,4 +146,14 @@ div.transactionHome {
 .active{
   border-bottom: 2px solid #226bfd;
   color: #0053ff;
+}
+.gold{
+  color: #d4af37;
+}
+.homePage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #fff;
 }
